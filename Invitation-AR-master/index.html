@@ -39,7 +39,7 @@
 
             // Count down Timer and Countdown Timer Component
 
-            AFRAME.registerComponent('clock-text', {
+/*            AFRAME.registerComponent('clock-text', {
                 init: function() {
 		    console.log('Timer init entered');
                     var el = this.el;
@@ -79,7 +79,7 @@
                 }
             });
 		
-		
+	*/	
 	    // Mappoint component
 		
 	    AFRAME.registerComponent('mappoint-handler', {
@@ -111,7 +111,7 @@
                 
                 <!-- Invitation  Video -->
                 
-                <video preload="none" id="invitation" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
+                <video preload="none" id="invitation"  response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
                     <source  src="videos/video.mp4">
                 </video>
 
@@ -121,7 +121,8 @@
                 
                 <!-- Texture Image -->
 
-                <img id="texture" src="images/texture.jpg">
+                <a-entity gltf-model-next="src: url(/model/tree.gltf);">
+      </a-entity>
 
             </a-assets>
             
